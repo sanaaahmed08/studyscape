@@ -22,7 +22,7 @@ def send_count(count):
         "timestamp": firestore.SERVER_TIMESTAMP
     })
 
-session = ort.InferenceSession("yolov8n.onnx")
+session = ort.InferenceSession("MODEL_PATH")
 
 input_name = session.get_inputs()[0].name
 
